@@ -1,6 +1,14 @@
 from flask import Flask, request, jsonify, send_from_directory
 import os
 import json
+import certifi
+
+# --- FIX: SSL Certificate Path Error on Hostinger ---
+# This overrides the stale 'jobpilot' path with the correct current path
+os.environ['SSL_CERT_FILE'] = certifi.where()
+os.environ['REQUESTS_CA_BUNDLE'] = certifi.where()
+# ----------------------------------------------------
+
 from backend_parser import extract_text_from_pdf, analyze_resume_with_openai
 from apply_bot import run_application_bot
 from linkedin_bot import run_linkedin_bot
