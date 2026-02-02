@@ -1,0 +1,9 @@
+__pycache__/
+venv/
+.env
+*.DS_Store
+latest_resume.pdf
+application_success.png
+stop_signal.txt*.mp4
+*.mp4
+*.mp4

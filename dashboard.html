@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplyNinja | Mission Control</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-paper-plane"></i> ApplyNinja
+                </a>
+            </div>
+            <div class="user-profile">
+                <span class="user-name">Pilot One</span>
+                <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                <a href="history.html" style="margin-left: 10px; color: var(--text-light);" title="History"><i class="fa-solid fa-clock-rotate-left"></i></a>
+                <a href="settings.html" style="margin-left: 10px; color: var(--text-light);" title="Settings"><i class="fa-solid fa-gear"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-container container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div>
+                <h1>Mission Control</h1>
+                <p>Your autonomous agents are currently active.</p>
+            </div>
+            <button id="google-search-btn" class="btn-primary small">
+                <i class="fa-brands fa-google"></i> Search Jobs
+            </button>
+            <button id="linkedin-btn" class="btn-primary small" style="background: #0077b5; margin-left: 10px;">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn Pilot
+            </button>
+            <button id="stop-bot-btn" class="btn-primary small" style="background: #ef4444; margin-left: 10px; display: none;">
+                <i class="fa-solid fa-stop"></i> Stop Bot
+            </button>
+        </header>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon blue"><i class="fa-solid fa-paper-plane"></i></div>
+                <div class="stat-info">
+                    <h3>Applied</h3>
+                    <p class="stat-number">24</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon yellow"><i class="fa-solid fa-calendar-check"></i></div>
+                <div class="stat-info">
+                    <h3>Interviews</h3>
+                    <p class="stat-number">3</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon green"><i class="fa-solid fa-robot"></i></div>
+                <div class="stat-info">
+                    <h3>Agents Active</h3>
+                    <p class="stat-number">5</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Job Table -->
+        <section class="recent-activity">
+            <h2>Flight Log (Recent Applications)</h2>
+            <div class="table-responsive">
+                <table class="job-table">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Role</th>
+                            <th>Match Score</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="job-list-body">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- LinkedIn Login Modal -->
+    <div id="linkedin-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 style="margin-bottom:1rem; color:#0f172a;"><i class="fa-brands fa-linkedin" style="color:#0077b5;"></i> LinkedIn Login</h2>
+            <p style="margin-bottom:1.5rem; color:#64748b; font-size:0.9rem;">Enter credentials to authorize the agent.</p>
+            <form id="linkedin-form">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="li-email" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="li-password" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;">
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%;">Start Automation</button>
+                <div style="margin-top: 1rem; padding: 12px; background: #f0fdf4; border-radius: 8px; border: 1px solid #bbf7d0; color: #15803d; font-size: 0.85rem; display: flex; align-items: center; gap: 10px; line-height: 1.4;">
+                    <i class="fa-solid fa-shield-halved" style="font-size: 1.1rem;"></i> <span>Your credentials are 256-bit encrypted & processed locally. We never store your password.</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal" style="display:none;">
+        <div class="modal-content" style="text-align: center;">
+            <span id="close-payment-modal" class="close">&times;</span>
+            <h2 style="color: #0f172a; margin-bottom: 10px;">🚀 Upgrade to Premium</h2>
+            <p style="color: #64748b; margin-bottom: 20px;">You've reached the free limit of 3 applications.</p>
+            
+            <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border: 2px dashed #cbd5e1; margin-bottom: 20px;">
+                <!-- Replace with your actual QR Code image -->
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=YOUR_UPI_ID&pn=ApplyNinja&am=99" alt="UPI QR Code" style="width: 150px; height: 150px;">
+                <p style="margin-top: 10px; font-weight: 700; color: #0f172a;">Pay ₹99 for 50 Jobs</p>
+            </div>
+
+            <button id="verify-payment-btn" class="btn-primary" style="width: 100%;">I Have Paid</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

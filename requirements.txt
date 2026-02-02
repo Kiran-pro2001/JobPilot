@@ -1,0 +1,6 @@
+flask
+openai
+PyPDF2
+python-dotenv
+selenium
+webdriver-manager

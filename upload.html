@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplyNinja | Upload Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar (Simplified for Focus) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-paper-plane"></i> ApplyNinja
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="upload-section">
+        <div class="container">
+            <div class="upload-card">
+                <h2>Upload Your Resume</h2>
+                <p>We accept PDF, DOCX, or TXT formats to begin the semantic analysis.</p>
+                
+                <div class="drop-zone" id="drop-zone">
+                    <div class="icon-large"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <p>Drag & Drop your file here</p>
+                    <p class="or">or</p>
+                    <button class="btn-secondary" id="browse-btn">Browse Files</button>
+                    <input type="file" id="file-input" hidden accept=".pdf,.doc,.docx,.txt">
+                </div>
+
+                <!-- Analysis Progress (Hidden initially) -->
+                <div class="analysis-status" id="analysis-status" style="display: none;">
+                    <div class="file-info">
+                        <i class="fa-solid fa-file-pdf"></i> <span id="filename">resume.pdf</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <p class="status-text" id="status-text">Initializing AI agents...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

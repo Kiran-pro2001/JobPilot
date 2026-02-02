@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplyNinja | Settings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-paper-plane"></i> ApplyNinja
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="dashboard.html">Back to Dashboard</a>
+                <a href="history.html" style="margin-left: 1rem;">History</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container dashboard-container">
+        <header class="dashboard-header">
+            <div>
+                <h1>Settings</h1>
+                <p>Refine your profile for better agent performance.</p>
+            </div>
+        </header>
+
+        <div class="settings-card">
+            <form id="settings-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="job_role">Target Job Role</label>
+                    <input type="text" id="job_role" name="job_role">
+                </div>
+
+                <div class="form-group">
+                    <label for="skills">Skills (Comma separated)</label>
+                    <textarea id="skills" name="skills" rows="4"></textarea>
+                    <small>These keywords are used for the search agent.</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Raw JSON Data (Debug View)</label>
+                    <pre id="raw-json" style="background: #f8fafc; padding: 1rem; border-radius: 8px; overflow-x: auto; font-size: 0.85rem; border: 1px solid #e2e8f0; color: var(--text-light);"></pre>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Save Changes</button>
+                    <a href="dashboard.html" class="btn-secondary" style="text-decoration: none; margin-left: 1rem;">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

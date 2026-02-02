@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplyNinja | Upgrade to Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-paper-plane"></i> ApplyNinja
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="upload-section">
+        <div class="container">
+            <div class="upload-card" style="max-width: 500px;">
+                <div class="badge" style="background: #e0e7ff; color: #4338ca; margin-bottom: 1rem;">Pro Captain Plan</div>
+                <h2 style="margin-bottom: 0.5rem;">Complete Your Payment</h2>
+                <p>Scan the QR code below to pay <strong>₹99</strong> via GPay/UPI.</p>
+                
+                <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border: 2px dashed #cbd5e1; margin: 20px 0;">
+                    <!-- QR Code generating a UPI link for 99 Rs -->
+                    <img src="./gpay_scanner.jpeg" alt="Payment QR Code" style=" height: 280px; border-radius: 8px;">
+                    <p style="margin-top: 15px; font-weight: 700; color: #0f172a; font-size: 1.1rem;">₹99.00</p>
+                    <p style="font-size: 0.85rem; color: #64748b;">UPI ID: kk9840042@okaxis</p>
+                </div>
+
+                <form id="payment-proof-form" style="text-align: left;">
+                    <div class="form-group">
+                        <label for="proof-file">Upload Payment Screenshot</label>
+                        <input type="file" id="proof-file" accept="image/*" required style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; width: 100%;">
+                        <small>We need this to verify your transaction.</small>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+                        Verify & Continue
+                    </button>
+                </form>
+                
+                <div style="margin-top: 1.5rem; font-size: 0.85rem; color: #64748b; text-align: center;">
+                    <p>Having trouble? Email us at <a href="mailto:kk9840042@gmail.com" style="color: var(--primary);">kk9840042@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

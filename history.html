@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplyNinja | Application History</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-paper-plane"></i> ApplyNinja
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="dashboard.html">Back to Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container dashboard-container">
+        <header class="dashboard-header">
+            <div>
+                <h1>Application History</h1>
+                <p>Log of all autonomous agent activities.</p>
+            </div>
+            <button id="clear-history-btn" style="padding: 8px 16px; background: #fee2e2; color: #ef4444; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">
+                <i class="fa-solid fa-trash"></i> Clear History
+            </button>
+        </header>
+
+        <section class="recent-activity">
+            <div class="table-responsive">
+                <table class="job-table">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Date & Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-table-body">
+                        <!-- Populated by JS -->
+                        <tr><td colspan="4" style="text-align:center; padding: 2rem; color: #64748b;">Loading history...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

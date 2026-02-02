@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplyNinja | AI-Powered Career Automation</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-paper-plane"></i> ApplyNinja
+            </div>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How it Works</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-animation">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+            <div class="hero-blob hero-blob-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <!-- <span class="badge">🚀 Launchathon 2024 Entry</span> -->
+                <h1>Upload your resume.<br>AI flies your career forward.</h1>
+                <p>Stop spending hours scrolling and applying. ApplyNinja bridges the gap between your skills and the market. Our autonomous agents find and apply to your dream jobs while you sleep.</p>
+                <div class="hero-buttons">
+                    <button id="cta-upload-hero" class="btn-primary">
+                        <i class="fa-solid fa-cloud-arrow-up"></i> Upload Your Resume
+                    </button>
+                </div>
+                <p class="sub-text"><i class="fa-solid fa-check"></i> No credit card required &middot; <i class="fa-solid fa-check"></i> Fully Automated</p>
+            </div>
+            <div class="hero-image video-wrapper">
+                <div class="video-container-3d">
+                    <div class="video-glow"></div>
+                    <video src="./JobPilot Video.mp4" autoplay controls loop></video>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Social Proof / Trusted By -->
+    <section class="trusted-by">
+        <div class="container">
+            <p>Trusted by professionals landing jobs at</p>
+            <div class="logo-grid">
+                <div class="logo-item"><i class="fa-brands fa-google"></i> Google</div>
+                <div class="logo-item"><i class="fa-brands fa-microsoft"></i> Microsoft</div>
+                <div class="logo-item"><i class="fa-brands fa-amazon"></i> Amazon</div>
+                <div class="logo-item"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                <div class="logo-item"><i class="fa-brands fa-airbnb"></i> Airbnb</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem / Solution Section -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Gap in the Market</h2>
+                <p>Job hunting has become a full-time job. We fixed it.</p>
+            </div>
+            <div class="grid-2">
+                <div class="box problem">
+                    <h3><i class="fa-solid fa-xmark"></i> The Old Way</h3>
+                    <ul>
+                        <li>Manually searching 10+ job boards.</li>
+                        <li>Tweaking resumes for every single application.</li>
+                        <li>Ghosted by recruiters after hours of work.</li>
+                        <li>Missed opportunities due to timing.</li>
+                    </ul>
+                </div>
+                <div class="box solution">
+                    <h3><i class="fa-solid fa-check"></i> The ApplyNinja Way</h3>
+                    <ul>
+                        <li><strong>Semantic Analysis:</strong> We understand your skills, not just keywords.</li>
+                        <li><strong>Auto-Apply:</strong> Agents apply instantly when jobs drop.</li>
+                        <li><strong>Unified Dashboard:</strong> See interviews and status in one place.</li>
+                        <li><strong>Zero Friction:</strong> You upload. We pilot.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="steps">
+        <div class="container">
+            <h2>Your Flight Plan</h2>
+            <div class="step-grid">
+                <div class="step-card">
+                    <div class="icon-box"><i class="fa-solid fa-file-pdf"></i></div>
+                    <h3>1. Upload Resume</h3>
+                    <p>Upload your PDF. Our backend parses your skills and intent instantly.</p>
+                </div>
+                <div class="step-card">
+                    <div class="icon-box"><i class="fa-solid fa-robot"></i></div>
+                    <h3>2. Agents Deploy</h3>
+                    <p>Our AI scans the entire web for opportunities matching your semantic profile.</p>
+                </div>
+                <div class="step-card">
+                    <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3>3. Auto-Apply</h3>
+                    <p>The system fills out applications on your behalf. You just check your dashboard.</p>
+                </div>
+            </div>
+            <div class="cta-container">
+                <button id="cta-upload-footer" class="btn-primary large">
+                    Start Your Autopilot Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section" style="background: #f8fafc; padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that fits your career goals.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Free Tier -->
+                <div class="pricing-card">
+                    <h3>Free Pilot</h3>
+                    <div class="price">₹0<span>/mo</span></div>
+                    <p>Perfect for testing the waters.</p>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> 3 Auto-Applications</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Resume Parsing</li>
+                        <li><i class="fa-solid fa-check"></i> Dashboard Access</li>
+                    </ul>
+                    <a href="upload.html" class="btn-secondary-outline" style="width: 100%; justify-content: center;">Get Started</a>
+                </div>
+
+                <!-- Pro Tier -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Pro Captain</h3>
+                    <div class="price">₹99<span>/mo</span></div>
+                    <p>Supercharge your job search.</p>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> 50 Auto-Applications</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced AI Matching</li>
+                        <li><i class="fa-solid fa-check"></i> Priority Support</li>
+                        <li><i class="fa-solid fa-check"></i> LinkedIn Automation</li>
+                    </ul>
+                    <a href="payment.html" class="btn-primary" style="width: 100%; justify-content: center;">Upgrade Now</a>
+                </div>
+
+                <!-- Enterprise Tier -->
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <p>For recruitment agencies.</p>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> Unlimited Applications</li>
+                        <li><i class="fa-solid fa-check"></i> Multiple User Seats</li>
+                        <li><i class="fa-solid fa-check"></i> API Access</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated Account Manager</li>
+                    </ul>
+                    <a href="mailto:kk9840042@gmail.com?subject=Enterprise%20Requirement%20Inquiry" class="btn-secondary-outline" style="width: 100%; justify-content: center;">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Don't just take our word for it</h2>
+                <p>Join 10,000+ professionals who automated their career growth.</p>
+            </div>
+            <div class="testimonial-grid">
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="quote-text">"I woke up to 3 interview requests the next morning. ApplyNinja didn't just save me time, it found roles I missed entirely."</p>
+                    <div class="user-info">
+                        <div class="user-avatar" style="background: #dbeafe; color: #2563eb;">SJ</div>
+                        <div>
+                            <h4>Sarah Jenkins</h4>
+                            <span>Senior Product Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="quote-text">"The semantic matching is actually legit. It didn't spam random companies; it applied to jobs that fit my specific tech stack perfectly."</p>
+                    <div class="user-info">
+                        <div class="user-avatar" style="background: #fce7f3; color: #db2777;">DC</div>
+                        <div>
+                            <h4>David Chen</h4>
+                            <span>Backend Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="quote-text">"As a data scientist, I appreciate the precision. The AI agent handled the tedious form-filling better than I could have."</p>
+                    <div class="user-info">
+                        <div class="user-avatar" style="background: #dcfce7; color: #166534;">ER</div>
+                        <div>
+                            <h4>Emily Rodriguez</h4>
+                            <span>Data Scientist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="background: white; padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about ApplyNinja.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How does the AI apply for me?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our autonomous agents use Selenium to navigate job portals like LinkedIn. They log in, search for jobs matching your criteria, and fill out applications using data extracted from your resume.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Is my data safe?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Your credentials are encrypted and processed locally on your machine during the automation session. We do not store your LinkedIn password on our servers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I stop the bot at any time?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. The dashboard features an emergency "Stop Bot" button that instantly halts all automation processes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" style="background: #f8fafc; padding: 80px 0;">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get in touch</h2>
+                    <p>Have questions? We'd love to hear from you.</p>
+                    <ul class="contact-details">
+                        <li><i class="fa-solid fa-envelope"></i> kk9840042@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Bangalore, India</li>
+                    </ul>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" id="contact-name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="contact-email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="contact-message" rows="4" required placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="logo" style="color: white; font-size: 1.5rem;">
+                        <i class="fa-solid fa-paper-plane"></i> ApplyNinja
+                    </div>
+                    <p>The AI-powered career copilot that automates your job search, application, and tracking process. Land your dream job while you sleep.</p>
+                </div>
+                
+                <!-- Links 1 -->
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How it Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-newsletter">
+                    <h4>Stay Ahead</h4>
+                    <p style="color: #94a3b8; margin-bottom: 1rem;">Get the latest career hacks & AI tools delivered to your inbox.</p>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="email" placeholder="Enter email" style="padding: 10px; border-radius: 6px; border: none; width: 100%; background: #1e293b; color: white;">
+                        <button class="btn-primary small" style="padding: 10px 20px;">Join</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ApplyNinja Inc. All rights reserved.</p>
+                <div class="social-icons" style="display: flex; gap: 20px; font-size: 1.2rem;">
+                    <a href="#" style="color: #94a3b8;"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" style="color: #94a3b8;"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" style="color: #94a3b8;"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+    "name": "Kiran Kumar",
+    "email": "kk9840042@gmail.com",
+    "phone": "8590658979",
+    "skills": [
+        "Python",
+        "Flask",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "SQL",
+        "Git"
+    ],
+    "years_of_experience": 2,
+    "job_role": "Software Engineer",
+    "tech_stack": [
+        "Flask",
+        "HTML",
+        "CSS",
+        "React"
+    ],
+    "education": [
+        "B.Tech in Computer Science - Punjab Technical University"
+    ],
+    "certifications": [
+        "Oracle Certified Cloud Practitioner",
+        "Oracle Certified Cloud Professional"
+    ],
+    "summary": "Motivated Developer with 2 years of experience in Python and JavaScript.",
+    "application_count": 17,
+    "is_premium": true
+}

@@ -1,0 +1,26 @@
+🤖 LinkedIn Agent Initialized for: kk9840042@gmail.com
+🎯 Target Role: Software Engineer
+🔑 Logging in...
+❌ Bot Error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.110)
+Stacktrace:
+0   chromedriver                        0x000000010131efd4 cxxbridge1$str$ptr + 3095476
+1   chromedriver                        0x00000001013173ec cxxbridge1$str$ptr + 3063756
+2   chromedriver                        0x0000000100dfa83c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008
+3   chromedriver                        0x0000000100dd3334 chromedriver + 160564
+4   chromedriver                        0x0000000100e6cc34 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 542968
+5   chromedriver                        0x0000000100e82b24 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 632808
+6   chromedriver                        0x0000000100e3806c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326960
+7   chromedriver                        0x00000001012dd5dc cxxbridge1$str$ptr + 2826684
+8   chromedriver                        0x00000001012e0d1c cxxbridge1$str$ptr + 2840828
+9   chromedriver                        0x00000001012c2bec cxxbridge1$str$ptr + 2717644
+10  chromedriver                        0x00000001012e15a0 cxxbridge1$str$ptr + 2843008
+11  chromedriver                        0x00000001012b2cc4 cxxbridge1$str$ptr + 2652324
+12  chromedriver                        0x0000000101305a9c cxxbridge1$str$ptr + 2991740
+13  chromedriver                        0x0000000101305c18 cxxbridge1$str$ptr + 2992120
+14  chromedriver                        0x0000000101317044 cxxbridge1$str$ptr + 3062820
+15  libsystem_pthread.dylib             0x0000000193941c08 _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019393cba8 thread_start + 8
+
+🛑 Closing Driver...
