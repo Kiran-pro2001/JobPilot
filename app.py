@@ -16,6 +16,14 @@ from logger import clear_logs, log
 
 app = Flask(__name__)
 
+@app.route("/health")
+def health():
+    return {
+        "status": "ok",
+        "env_loaded": bool(os.getenv("OPENAI_API_KEY"))
+    }
+
+
 # 1. Serve the Frontend
 @app.route('/')
 def index():
